@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>Test</h1>
+  <label for="inputField">Name/Value Pair</label>
+  <input type="text" id="inputField" placeholder="Enter pair like name = value" />
+  <div class="buttons">
+    <button onclick="addPair()">Add</button>
+    <button onclick="sortList('name')">Sort by Name</button>
+    <button onclick="sortList('value')">Sort by Value</button>
+    <button onclick="deleteSelected()">Delete</button>
+    <button onclick="showAsXML()">Show as XML</button>
+  </div>
+  <label for="listBox">Name/Value Pair List</label>
+  <select id="listBox" multiple></select>
+  <div id="xmlOutput"></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
